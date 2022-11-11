@@ -1,0 +1,22 @@
+{
+    "name": "Cobilas.Unity.Editor.DebugConsole",
+    "references": [
+        "Cobilas.Unity.Utility",
+        "Cobilas.Unity.DebugConsole"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Cobilas.Collections.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
