@@ -1,15 +1,14 @@
 {
     "name": "Cobilas.Unity.DebugConsole",
     "references": [
-        "Cobilas.Unity.Utility"
+        "Cobilas.Unity.Utility",
+        "Cobilas.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
-    "precompiledReferences": [
-        "Cobilas.Collections.dll"
-    ],
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

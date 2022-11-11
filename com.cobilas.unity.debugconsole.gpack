@@ -1,9 +1,10 @@
 {
     "name": "com.cobilas.unity.debugconsole",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repository": "https://github.com/BelicusBr/com.cobilas.unity.debugconsole.git",
     "relatedPackages": [
-        "1.0.0"
+        "1.0.0",
+        "1.0.1"
     ],
     "gitDependencies": [
         {
@@ -12,9 +13,9 @@
             "branch": "1.0.26"
         },
         {
-            "URL": "https://github.com/BelicusBr/com.cobilas.cobilascore.git",
-            "name": "com.cobilas.cobilascore",
-            "branch": "1.0.32"
+            "URL": "https://github.com/BelicusBr/com.cobilas.core.git",
+            "name": "com.cobilas.core",
+            "branch": "1.0.0"
         }
     ]
 }
