@@ -5,10 +5,10 @@ namespace Cobilas.Unity.UtilityConsole {
     [System.Serializable]
     public sealed class DebugLogger {
         public bool foldout;
-        private LogType type;
-        private string msm;
-        private string tracking;
-        private DateTime time;
+        private readonly LogType type;
+        private readonly string msm;
+        private readonly string tracking;
+        private readonly DateTime time;
 
         public string MSM => msm;
         public LogType Type => type;

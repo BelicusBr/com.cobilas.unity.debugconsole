@@ -237,8 +237,9 @@ namespace Cobilas.Unity.Editor.UtilityConsole {
             return toolbar;
         }
 
-        private string ColoredText(DebugLogger logger)
-            => ColoredText(logger.LogTypeColor, logger.MSM.TrimEnd());
+        //Método para usar futuramente
+        //private string ColoredText(DebugLogger logger)
+        //    => ColoredText(logger.LogTypeColor, logger.MSM.TrimEnd());
 
         private string ColoredText(Color color, string txt)
             => string.Format("<color=#{0}>{1}</color>", ColorUtility.ToHtmlStringRGBA(color), txt);
