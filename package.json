@@ -1,19 +1,19 @@
 {
-    "name": "com.cobilas.unity.debugconsole",
-    "displayName": "Debug Console",
-    "version": "1.0.2",
-    "description": "Uma ferramenta de console para o projeto.",
-    "unity": "2019.1",
-    "unityRelease": "0b5",
-    "type": "tools",
-    "author": {
-        "name": "Cobilas CTB"
-      },
-      "repository": {
-        "url": "https://github.com/BelicusBr/com.cobilas.unity.debugconsole.git",
-        "type": "git"
-      },
-      "publishConfig": {
-        "registry": "https://npm.pkg.github.com/@BelicusBr"
-      }
+  "name": "com.cobilas.unity.debugconsole",
+  "displayName": "Debug Console",
+  "version": "1.0.2",
+  "description": "Uma ferramenta de console para o projeto.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "type": "tool",
+  "author": {
+    "name": "Cobilas CTB"
+  },
+  "repository": {
+    "url": "https://github.com/BelicusBr/com.cobilas.unity.debugconsole.git",
+    "type": "git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@BelicusBr"
+  }
 }
