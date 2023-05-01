@@ -2,20 +2,23 @@
 using System.IO;
 using System.Text;
 using UnityEngine;
-using System.Reflection;
 using Cobilas.Collections;
 using System.Collections.Generic;
 #if UNITY_EDITOR
 using UnityEditor;
-using Cobilas.Unity.Utility;
+using System.Reflection;
 using System.Runtime.Serialization.Formatters.Binary;
 #endif
 
-namespace Cobilas.Unity.UtilityConsole {
+namespace Cobilas.Unity.Utility.Console {
     public static class DebugConsole {
 
-        private static Dictionary<string, DebugLogger[]> logs = new Dictionary<string, DebugLogger[]>();
         private static string targetModule;
+#if UNITY_EDITOR
+        private static Dictionary<string, DebugLogger[]> logs = new Dictionary<string, DebugLogger[]>();
+#else
+        private static readonly Dictionary<string, DebugLogger[]> logs = new Dictionary<string, DebugLogger[]>();
+#endif
 
         public static Dictionary<string, DebugLogger[]> Logs => logs;
 #if UNITY_EDITOR
@@ -90,7 +93,7 @@ namespace Cobilas.Unity.UtilityConsole {
                 Debug.LogError($"O metodo não e compativel com a versão:{Application.unityVersion} da unity.\n" +
                     $"{E}");
             }
-#endif        
+#endif
         }
 
         public static void PrintToFile()

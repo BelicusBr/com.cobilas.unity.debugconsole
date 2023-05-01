@@ -1,4 +1,8 @@
-# Changelog
+## [2.0.1] - 26/04/2023
+### Fixed
+- O namespace `Cobilas.Unity.Utility` usado na classe `DebugConsole` foi removido do codigo do editor.
+### Changed
+- O namespace `Cobilas.Unity.UtilityConsole` foi substituido pro `Cobilas.Unity.Utility.Console`.
 ## [1.0.2] - 30/01/2023
 ### Changed
 - O método `string:DebugConsoleWin.ColoredText(DebugLogger)` foi comentado por não ser usado.

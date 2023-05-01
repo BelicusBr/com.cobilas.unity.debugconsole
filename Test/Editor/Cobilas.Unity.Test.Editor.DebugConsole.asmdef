@@ -1,16 +1,21 @@
 {
-    "name": "Cobilas.Unity.DebugConsole",
+    "name": "Cobilas.Unity.Test.Editor.DebugConsole",
     "references": [
         "Cobilas.Core",
-        "Cobilas.Unity.Utility"
+        "Cobilas.Unity.Editor.Utility",
+        "Cobilas.Unity.Test.DebugConsole"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }
