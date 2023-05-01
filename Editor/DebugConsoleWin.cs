@@ -4,7 +4,7 @@ using UnityEngine;
 using Cobilas.Collections;
 using Cobilas.Unity.Utility;
 using System.Collections.Generic;
-using Cobilas.Unity.UtilityConsole;
+using Cobilas.Unity.Utility.Console;
 
 namespace Cobilas.Unity.Editor.UtilityConsole {
     public class DebugConsoleWin : EditorWindow {

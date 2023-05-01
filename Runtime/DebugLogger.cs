@@ -1,8 +1,8 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Cobilas.Unity.UtilityConsole {
-    [System.Serializable]
+namespace Cobilas.Unity.Utility.Console {
+    [Serializable]
     public sealed class DebugLogger {
         public bool foldout;
         private readonly LogType type;

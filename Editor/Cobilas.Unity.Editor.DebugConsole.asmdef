@@ -1,9 +1,9 @@
 {
     "name": "Cobilas.Unity.Editor.DebugConsole",
     "references": [
+        "Cobilas.Core",
         "Cobilas.Unity.Utility",
-        "Cobilas.Unity.DebugConsole",
-        "Cobilas.Core"
+        "Cobilas.Unity.DebugConsole"
     ],
     "includePlatforms": [
         "Editor"
