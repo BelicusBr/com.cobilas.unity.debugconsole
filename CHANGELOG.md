@@ -1,3 +1,10 @@
+#ChangeLog
+## [2.1.0] - 29/08/2023
+## Changed
+- As dependencias do pacote foram aluteradas.
+## [2.0.1-ch1] - 28/08/2023
+### Changed
+- O autor do pacote foi alterado de `Cobilas CTB` para `BélicusBr`.
 ## [2.0.1] - 26/04/2023
 ### Fixed
 - O namespace `Cobilas.Unity.Utility` usado na classe `DebugConsole` foi removido do codigo do editor.
