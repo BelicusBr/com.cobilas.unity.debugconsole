@@ -1,12 +1,12 @@
 {
   "name": "com.cobilas.unity.debugconsole",
   "displayName": "Debug Console",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Uma ferramenta de console para o projeto.",
   "unity": "2019.1",
   "unityRelease": "0b5",
   "type": "tool",
-  "author": "Cobilas CTB",
+  "author": "BélicusBr",
   "repository": {
     "url": "git+https://github.com/BelicusBr/com.cobilas.unity.debugconsole.git",
     "type": "git"
@@ -21,12 +21,12 @@
   },
   "keywords": [
     "unity3d",
-    "C#",
-    "CSharp"
+    "unity-csharp",
+	"unitypackage"
   ],
   "license": "MIT",
   "dependencies": {
-    "com.cobilas.core": "^2.0.0",
-    "com.cobilas.unity.utility": "^2.6.0"
+    "com.cobilas.core": "3.0.0",
+    "com.cobilas.unity.utility": "2.8.0"
   }
 }
