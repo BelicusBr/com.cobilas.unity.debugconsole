@@ -7,6 +7,8 @@ using System.Collections.Generic;
 #if UNITY_EDITOR
 using UnityEditor;
 using System.Reflection;
+using System.Collections;
+using Unity.EditorCoroutines.Editor;
 using System.Runtime.Serialization.Formatters.Binary;
 #endif
 
@@ -25,9 +27,9 @@ namespace Cobilas.Unity.Utility.Console {
         public static string DebugConsoleFolder => UnityPath.Combine(UnityPath.PersistentDataPath, "DebugConsole");
         public static string DebugConsoleFile => UnityPath.Combine(DebugConsoleFolder, "DebugConsole.log");
 
-        private static float timer;
         [InitializeOnLoadMethod]
         private static void Init() {
+
             string filePath = DebugConsoleFile;
             if (!Directory.Exists(DebugConsoleFolder))
                 Directory.CreateDirectory(DebugConsoleFolder);
@@ -39,16 +41,15 @@ namespace Cobilas.Unity.Utility.Console {
                 } catch { }
             } else File.Create(filePath).Dispose();
 
-            EditorApplication.update += () => {
-                timer += Time.unscaledDeltaTime;
-                if (((int)timer % 50) == 0) {
-                    timer = 0;
-                    filePath = DebugConsoleFile;
-                    FileStream temp;
-                    new BinaryFormatter().Serialize(temp = File.Create(filePath), logs);
-                    temp.Dispose();
-                }
-            };
+            _ = EditorCoroutineUtility.StartCoroutineOwnerless(WriteDebugLog(filePath, 1.5f));
+        }
+
+        private static IEnumerator WriteDebugLog(string filePath, float timer) {
+            while (true) {
+                yield return new WaitForSeconds(timer);
+                using (FileStream temp = File.Create(filePath))
+                    (_ = new BinaryFormatter()).Serialize(temp, logs);
+            }
         }
 #endif
 

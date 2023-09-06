@@ -1,8 +1,8 @@
 {
     "name": "Cobilas.Unity.DebugConsole",
     "references": [
-        "Cobilas.Core",
-        "Cobilas.Unity.Utility"
+        "Cobilas.Unity.Utility",
+        "Unity.EditorCoroutines.Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
