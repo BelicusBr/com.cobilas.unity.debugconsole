@@ -1,27 +1,30 @@
 #ChangeLog
+## [2.3.0] 27/01/2024
+### Changed
+A change in package dependencies.
 ## [2.2.0] - 06/09/2023
 ### Changed
-- As dependencias do pacote foram aluteradas.
+- Package dependencies have been changed.
 ### Added
-- A dependencia `com.unity.editorcoroutines` foi adicionado.
-- O metódo estatico privado `IEnumerator DebugConsole.WriteDebugLog(string, float);` 
-para gravar o DebugLogger no Editor.
+- The `com.unity.editorcoroutines` dependency has been added.
+- The private static method `IEnumerator DebugConsole.WriteDebugLog(string, float);`
+to write DebugLogger to the Editor.
 ## [2.1.0] - 29/08/2023
 ## Changed
-- As dependencias do pacote foram aluteradas.
+- Package dependencies have been changed.
 ## [2.0.1-ch1] - 28/08/2023
 ### Changed
-- O autor do pacote foi alterado de `Cobilas CTB` para `BélicusBr`.
+- The package author was changed from `Cobilas CTB` to `BélicusBr`.
 ## [2.0.1] - 26/04/2023
-### Fixed
-- O namespace `Cobilas.Unity.Utility` usado na classe `DebugConsole` foi removido do codigo do editor.
+###Fixed
+- The `Cobilas.Unity.Utility` namespace used in the `DebugConsole` class has been removed from the editor code.
 ### Changed
-- O namespace `Cobilas.Unity.UtilityConsole` foi substituido pro `Cobilas.Unity.Utility.Console`.
+- The `Cobilas.Unity.UtilityConsole` namespace was replaced by `Cobilas.Unity.Utility.Console`.
 ## [1.0.2] - 30/01/2023
 ### Changed
-- O método `string:DebugConsoleWin.ColoredText(DebugLogger)` foi comentado por não ser usado.
-- Os campos da classe `DebugLogger` foram marcados como `readonly`.
+- The method `string:DebugConsoleWin.ColoredText(DebugLogger)` was commented out as not being used.
+- The fields of the `DebugLogger` class were marked as `readonly`.
 
 ## [1.0.0] 11/11/2022
-### Repositorio com.cobilas.unity.debugconsole iniciado
-- Lançado para o GitHub
+### Repository com.cobilas.unity.debugconsole started
+- Released to GitHub

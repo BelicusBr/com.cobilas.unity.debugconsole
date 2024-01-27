@@ -1,6 +1,7 @@
 {
     "name": "Cobilas.Unity.DebugConsole",
     "references": [
+        "Cobilas.Core.Net4x",
         "Cobilas.Unity.Utility",
         "Unity.EditorCoroutines.Editor"
     ],

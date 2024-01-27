@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "init_pack",
+			"problemMatcher": [],
+			"label": "npm: init_pack",
+			"detail": "npm pack --pack-destination C:/local.npm"
+		}
+	]
+}
