@@ -1,7 +1,7 @@
 {
   "name": "com.cobilas.unity.debugconsole",
   "displayName": "Debug Console",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A console tool for the project.",
   "unity": "2019.1",
   "unityRelease": "0b5",
@@ -17,7 +17,9 @@
   "homepage": "https://github.com/BelicusBr/com.cobilas.unity.debugconsole#readme",
   "main": "index.js",
   "scripts": {
-    "init_pack": "npm pack --pack-destination C:/local.npm"
+    "npm_pack": "npm pack --pack-destination C:/local.npm",
+    "npm_push": "@powershell -Command . cobilas.package.funcs.ps1 ; npm_push -package_name %npm_package_name% -package_version %npm_package_version%",
+	"npm_pack_push": "npm run npm_pack && npm run npm_push"
   },
   "keywords": [
     "unity3d",
@@ -26,7 +28,8 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "com.cobilas.unity.utility": "2.10.1",
-    "com.unity.editorcoroutines": "1.0.0"
+    "com.cobilas.unity.utility": "2.10.3",
+    "com.unity.editorcoroutines": "1.0.0",
+    "com.cobilas.unity.core.net4x": "1.4.1"
   }
 }
